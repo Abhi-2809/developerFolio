@@ -33,11 +33,7 @@ function Header() {
           <span className="grey-color">/&gt;</span>
         </a>
         <input className="menu-btn" type="checkbox" id="menu-btn" />
-        <label
-          className="menu-icon"
-          htmlFor="menu-btn"
-          style={{color: "white"}}
-        >
+        <label className="menu-icon" htmlFor="menu-btn" style={{color: "white"}}>
           <span className={isDark ? "navicon navicon-dark" : "navicon"}></span>
         </label>
         <ul className={isDark ? "dark-menu menu" : "menu"}>
@@ -46,29 +42,25 @@ function Header() {
               <a href="#skills">Skills</a>
             </li>
           )}
+          <li>
+            <a href="#education">Education</a>
+          </li>
           {viewExperience && (
             <li>
-              <a href="#experience">Work Experiences</a>
+              <a href="#experience">Experience</a>
             </li>
           )}
-          {viewOpenSource && (
-            <li>
-              <a href="#opensource">Open Source</a>
-            </li>
-          )}
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
           {viewAchievement && (
             <li>
-              <a href="#achievements">Achievements</a>
+              <a href="#achievements">Publications</a>
             </li>
           )}
           {viewBlog && (
             <li>
               <a href="#blogs">Blogs</a>
-            </li>
-          )}
-          {viewTalks && (
-            <li>
-              <a href="#talks">Talks</a>
             </li>
           )}
           {viewResume && (
@@ -77,9 +69,9 @@ function Header() {
             </li>
           )}
           <li>
-            <a href="#contact">Contact Me</a>
+            <a href="#contact">Contact</a>
           </li>
-          <li>
+          <li className="menu-right">
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a>
               <ToggleSwitch />
