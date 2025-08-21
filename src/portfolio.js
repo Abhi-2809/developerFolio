@@ -82,8 +82,8 @@ const educationInfo = {
       schoolName: "University of Wisconsin - Madison",
       logo: require("./assets/images/uwm.jpeg"),
       subHeader: "Master of Science in Data Science",
-      duration: "August 2023 - May 2025",
-     // desc: "Graduate coursework and research in statistical modeling, big data systems, algorithms, and data visualization.",
+      duration: "August 2023 - May 2025"
+      // desc: "Graduate coursework and research in statistical modeling, big data systems, algorithms, and data visualization.",
       // descBullets: [
       //   "Courses: Statistical Models, Big Data Systems, Data Structures, Algorithms, Data Management, Data Visualization"
       // ]
@@ -91,8 +91,9 @@ const educationInfo = {
     {
       schoolName: "Birla Institute of Technology and Science (BITS), Pilani",
       logo: require("./assets/images/bits.jpeg"),
-      subHeader: "Integrated MSc. Mathematics and B.E. Electronics and Communication",
-      duration: "August 2018 - May 2023",
+      subHeader:
+        "Integrated MSc. Mathematics and B.E. Electronics and Communication",
+      duration: "August 2018 - May 2023"
       //desc: "Interdisciplinary training across mathematics and embedded systems with a focus on ML fundamentals.",
       // descBullets: [
       //   "Courses:  Machine Learning, Artificial Intelligence, Object Oriented Programming, Optimisation, Operating Systems"
@@ -132,7 +133,7 @@ const workExperiences = {
       companylogo: require("./assets/images/wid.jpeg"),
       date: "Jan 2024 – June 2025",
       desc: "Wisconsin, USA",
-      bannerColor: "#1d4ed8",   // pick your blue
+      bannerColor: "#1d4ed8", // pick your blue
       companyTextColor: "#ffffff",
       descBullets: [
         "Developed task-specific data selection strategies (Uncertainty, Clustering) to identify most informative data points",
@@ -201,17 +202,25 @@ const bigProjects = {
     {
       image: require("./assets/images/summarisation.jpeg"),
       projectName: "YAKE Extractive Summary",
-      projectDesc: "Python implementation to generate extractive summaries using YAKE keywords.",
+      projectDesc:
+        "Python implementation to generate extractive summaries using YAKE keywords.",
       footerLink: [
-        {name: "GitHub Repository", url: "https://github.com/Abhi-2809/YAKE-Extractive-Summary"}
+        {
+          name: "GitHub Repository",
+          url: "https://github.com/Abhi-2809/YAKE-Extractive-Summary"
+        }
       ]
     },
     {
       image: require("./assets/images/llm.jpeg"),
       projectName: "Math Word Problem Generation",
-      projectDesc: "Generation of Math Word Problems (MWP) based on difficulty level and topic",
+      projectDesc:
+        "Generation of Math Word Problems (MWP) based on difficulty level and topic",
       footerLink: [
-        {name: "GitHub Repository", url: "https://github.com/Abhi-2809/MWP-generation"}
+        {
+          name: "GitHub Repository",
+          url: "https://github.com/Abhi-2809/MWP-generation"
+        }
       ]
     }
   ],
@@ -226,7 +235,8 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "Improving Task Diversity in Label Efficient Supervised Finetuning of LLMs",
+      title:
+        "Improving Task Diversity in Label Efficient Supervised Finetuning of LLMs",
       subtitle:
         "EMNLP 2025. Abhinav Arabelly*, Jagrut Nemade*, Jifan Zhang, Robert D. Nowak.",
       image: require("./assets/images/emnlp.png"),
@@ -239,7 +249,8 @@ const achievementSection = {
       ]
     },
     {
-      title: "Automatic Generation of Math Word Problems for Assessing Learner Skills in Adaptive Learning Systems",
+      title:
+        "Automatic Generation of Math Word Problems for Assessing Learner Skills in Adaptive Learning Systems",
       subtitle:
         "Proceedings of the International Conference on Best Innovative Teaching Strategies (ICON-BITS 2021).",
       image: require("./assets/images/ssrn.png"),
@@ -304,8 +315,7 @@ const resumeSection = {
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
-  subtitle:
-    "Discuss a project or just want to say hi? My inbox is open.",
+  subtitle: "Discuss a project or just want to say hi? My inbox is open.",
   number: "+1 (608) 298-8385",
   email_address: "arabellyabhinav28@gmail.com"
 };
@@ -339,4 +349,3 @@ export {
   isHireable,
   resumeSection
 };
-

@@ -27,7 +27,8 @@ export default function ExperienceCard({cardInfo, isDark}) {
       : null;
   }
 
-  const bannerBackground = cardInfo.bannerColor || rgb(colorArrays) || undefined;
+  const bannerBackground =
+    cardInfo.bannerColor || rgb(colorArrays) || undefined;
 
   const GetDescBullets = ({descBullets, isDark}) => {
     return descBullets
@@ -49,7 +50,11 @@ export default function ExperienceCard({cardInfo, isDark}) {
         <div className="experience-div-company">
           <h5
             className="experience-text-company"
-            style={cardInfo.companyTextColor ? {color: cardInfo.companyTextColor} : undefined}
+            style={
+              cardInfo.companyTextColor
+                ? {color: cardInfo.companyTextColor}
+                : undefined
+            }
           >
             {cardInfo.company}
           </h5>
